@@ -92,8 +92,12 @@ related_skills:
 
 当 skill 被激活后，逐条核查：
 
+⚠️ **确认触发**：在开始之前，确认此场景适合使用本skill（输入'继续'进入，输入'取消'退出）
+
 **关于"实事"（事实）**
 - 完成标准：你能回答"我对现状有第一手了解吗"（不是只听汇报）
+
+⏸️ **检查点**：请确认上述判断是否符合实际（输入'继续'或提出修正）
 
 **关于"是"（规律）**
 - 完成标准：你知道"这个判断的历史演变过程吗"（不看历史会误判）
@@ -101,11 +105,15 @@ related_skills:
 **关于"求"（研究）**
 - 完成标准：你问过"持不同意见的人是怎么看的"
 
+⏸️ **检查点**：请确认研究过程是否符合实际（输入'继续'或提出修正）
+
 **关于愿望与现实**
 - 完成标准：你能区分"我希望这样"和"这样会发生"
 
 **关于权威和多数**
 - 完成标准：你能回答"我的判断有没有被权威/多数影响"
+
+⏸️ **检查点**：请确认整个核查结果是否符合实际（输入'继续'或提出修正）
 
 ---
 
@@ -127,9 +135,9 @@ related_skills:
 
 ## 相关 skills (阶段 3)
 
-- depends-on: `maoxuan-investigation-research`（调查研究是"求"的方法，实事求是核查表是检验结论）
-- composes-with: `maoxuan-introspection-criticism`（整风反思诊断是实事求是原则在组织层面的应用）
-- contrasts-with: `maoxuan-impatient-left`（急躁冒进是违反实事求是的典型模式）
+- depends-on: `C:\Users\6dog\.qclaw\workspace\mao-skill\skills\f24-调查研究\SKILL.md`（调查研究是"求"的方法，实事求是核查表是检验结论）
+- composes-with: `C:\Users\6dog\.qclaw\workspace\mao-skill\skills\f11-整风反思诊断法\SKILL.md`（整风反思诊断是实事求是原则在组织层面的应用）
+- contrasts-with: `C:\Users\6dog\.qclaw\workspace\mao-skill\skills\f03-左倾冒险主义\SKILL.md`（急躁冒进是违反实事求是的典型模式）
 
 ---
 
