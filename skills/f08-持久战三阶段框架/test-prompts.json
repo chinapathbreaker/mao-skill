@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-persistence-war",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我现在处于弱势，感觉对手很强，不知道还能不能赢",
+      "expected_behavior": "激活持久战三阶段框架，判断当前处于哪个阶段（防御/相持/反攻），根据阶段采取正确策略",
+      "notes": "典型场景：弱势状态下的战略判断"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "已经坚持很久了，感觉看不到希望，是继续还是放弃？",
+      "expected_behavior": "激活持久战三阶段框架，分析是否处于'相持阶段'，判断转折点是否接近",
+      "notes": "典型场景：长期坚持中的迷茫"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "对手的力量开始出现衰退迹象，是不是可以发起总攻了？",
+      "expected_behavior": "激活持久战三阶段框架，识别'相持→反攻'的转折信号，判断反攻时机",
+      "notes": "典型场景：反攻时机的判断"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个月的KPI还差10%，怎么在最后几天冲刺完成",
+      "expected_behavior": "短期战术问题，不需要持久战战略框架",
+      "notes": "诱饵：短期冲刺"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我写一段Python代码",
+      "expected_behavior": "纯技术任务，不需要战略分析",
+      "notes": "诱饵：技术任务"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我现在处于防御阶段，但感觉太被动了，能不能主动进攻一下？",
+      "expected_behavior": "激活持久战三阶段框架，提醒防御阶段的核心策略是'保存实力，不争一城一地'，主动进攻可能打乱节奏",
+      "notes": "边界：防御阶段的冒进冲动"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "力量对比已经逆转了，但对手还是很强，不敢发起反攻",
+      "expected_behavior": "激活持久战三阶段框架，提醒反攻阶段的核心是'抓住时机扩大战果'，错过窗口期会给对手机会",
+      "notes": "边界：反攻阶段的保守倾向"
+    }
+  ]
+}

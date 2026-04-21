@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-class-analysis",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们公司想进入一个新市场，谁会是我们的朋友，谁会反对我们？",
+      "expected_behavior": "激活阶级分析法，列出所有利益方，分析各自利益基础，绘制阶级光谱",
+      "notes": "典型场景：市场进入的敌友判断"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个项目里有各种利益相关方，谁是真正的决策者，谁只是执行者？",
+      "expected_behavior": "激活阶级分析法，按利益关系分层：铁杆/可争取/摇摆/可瓦解/坚定反对",
+      "notes": "典型场景：组织内利益格局分析"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我要推动一个改革，谁会支持我，谁会阻力最大？",
+      "expected_behavior": "激活阶级分析法，分析每个利益相关者的利益来源和立场倾向",
+      "notes": "典型场景：变革推动的阻力分析"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "多方博弈，我应该联合谁、打击谁、忽略谁？",
+      "expected_behavior": "激活阶级分析法，绘制五层阶级光谱，制定差异化策略",
+      "notes": "典型场景：多方博弈的策略制定"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我分析一下这段代码的性能问题",
+      "expected_behavior": "纯技术问题，不需要敌友分析",
+      "notes": "诱饵：纯技术评估"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个会议定在周三下午两点",
+      "expected_behavior": "日常行政事务，不需要利益分析",
+      "notes": "诱饵：日常琐事"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "有个人利益很复杂，同时有多个利益方向，无法简单分类",
+      "expected_behavior": "激活，但应识别多维利益冲突，允许在同一分类中标注内部矛盾",
+      "notes": "边界：利益多维的复杂参与者"
+    }
+  ]
+}

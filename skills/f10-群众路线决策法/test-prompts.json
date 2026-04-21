@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-mass-line",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我做了一个决策，但执行层不太认同，执行不下去怎么办？",
+      "expected_behavior": "激活群众路线决策法，从'从群众中来'重新走一遍，收集执行层的真实意见",
+      "notes": "典型场景：决策执行不下去"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我要推动一个变革，阻力很大，怎么获得更多支持？",
+      "expected_behavior": "激活群众路线决策法，从群众中收集分散意见，到群众中解释决策的'为什么'",
+      "notes": "典型场景：变革推动中的阻力"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我的方案是对的，但团队里没人支持，问题在哪里？",
+      "expected_behavior": "激活群众路线决策法，检查'到群众中去'是否做到位，方案有没有向团队解释清楚为什么",
+      "notes": "典型场景：正确方案得不到支持"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个会议纪要怎么写",
+      "expected_behavior": "日常行政事务，不需要决策循环",
+      "notes": "诱饵：日常行政"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "Python的循环语句怎么写",
+      "expected_behavior": "纯技术教学，不需要决策流程",
+      "notes": "诱饵：技术教学"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "收集上来的群众意见互相矛盾，有支持的也有反对的，听谁的？",
+      "expected_behavior": "激活群众路线决策法，不是简单投票，而是用矛盾分析法识别主要意见，分析背后的利益基础",
+      "notes": "边界：群众意见相互冲突"
+    }
+  ]
+}

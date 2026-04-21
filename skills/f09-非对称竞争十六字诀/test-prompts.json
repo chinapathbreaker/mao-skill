@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-asymmetric-competition",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们是个小团队，竞争对手很大，正面打不过怎么办？",
+      "expected_behavior": "激活十六字诀，分析对手的'强'中隐含的弱点（进攻时后方空虚，驻扎时疲惫不堪），寻找不对称打法",
+      "notes": "典型场景：弱势对抗强势"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "有个巨头进入了我们的市场，他们的资源是我们的10倍",
+      "expected_behavior": "激活十六字诀，不正面竞争，寻找巨头力量薄弱的细分市场",
+      "notes": "典型场景：大公司进入细分市场"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我在跟一个比我资历深很多的人竞争，怎么才能赢？",
+      "expected_behavior": "激活十六字诀，分析对手的优势中隐含的弱点，寻找不对称策略",
+      "notes": "典型场景：个人竞争中的以弱胜强"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个月的销售目标怎么分解",
+      "expected_behavior": "销售目标分解，不需要非对称竞争策略",
+      "notes": "诱饵：常规管理任务"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我看看这段代码有什么问题",
+      "expected_behavior": "纯技术问题，不需要竞争策略",
+      "notes": "诱饵：技术调试"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我的资源也很有限，分散到几个方向好像也不对",
+      "expected_behavior": "激活十六字诀，提醒'分散兵力多条战线'是禁忌，每条线都处于劣势",
+      "notes": "边界：资源分散的诱惑"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我打了好几个小胜仗，感觉可以全面反攻了",
+      "expected_behavior": "激活十六字诀，提醒战术胜利不等于战略反攻，力量积累可能还不够",
+      "notes": "边界：战术胜利后的战略冒进"
+    }
+  ]
+}

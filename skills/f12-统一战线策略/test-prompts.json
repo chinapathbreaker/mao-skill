@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-unity-front",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我的力量不够，想联合更多人一起来做这件事，从哪里开始？",
+      "expected_behavior": "激活统一战线策略，识别当前主要敌人，扩大统一战线，团结一切可以团结的力量",
+      "notes": "典型场景：扩大阵营"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "盟友内部出现了分裂，有人开始动摇，要不要处理？",
+      "expected_behavior": "激活统一战线策略，分析团结的基础还在不在，判断是否需要'又团结又斗争'",
+      "notes": "典型场景：盟友动摇"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我们面临多个势力，哪些要打、哪些要拉、哪些要观望？",
+      "expected_behavior": "激活统一战线策略，识别主要敌人，动态管理敌友边界，制定差异化策略",
+      "notes": "典型场景：多方势力管理"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我分析一下这段代码的架构",
+      "expected_behavior": "纯技术分析，不需要阵营管理",
+      "notes": "诱饵：技术分析"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "明天的会议几点开始",
+      "expected_behavior": "日常行政事务，不需要统一战线策略",
+      "notes": "诱饵：日常行政"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "有个势力我想拉拢，但他们跟我们有过节，会不会是引狼入室？",
+      "expected_behavior": "激活统一战线策略，分析利益关系是否已变，确定团结的条件和底线",
+      "notes": "边界：与有过节的势力合作"
+    }
+  ]
+}

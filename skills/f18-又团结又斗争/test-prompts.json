@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-struggle-unite",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "合作方跟我有分歧，我想提出来但又怕影响关系，不提又觉得不对劲",
+      "expected_behavior": "激活又团结又斗争，用四步判断：团结目标还在吗→斗争边界在哪里→当前比例→定期重评",
+      "notes": "典型场景：盟友分歧的两难"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "团队里有人提出不同意见，我是该打压还是包容？",
+      "expected_behavior": "激活又团结又斗争，判断这是'人民内部矛盾'还是'敌我矛盾'，用不同方式处理",
+      "notes": "典型场景：团队内部不同意见"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "盟友提出了不合理要求，我们是退让还是硬刚？",
+      "expected_behavior": "激活又团结又斗争，判断团结的目标还在不在，决定'以斗争求团结'还是需要重新划定边界",
+      "notes": "典型场景：盟友不合理要求"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下这个API的文档",
+      "expected_behavior": "纯信息查询，不需要关系处理框架",
+      "notes": "诱饵：信息查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个代码怎么写",
+      "expected_behavior": "纯技术问题，不需要关系处理",
+      "notes": "诱饵：技术问题"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们一直对盟友退让，但感觉他们越来越得寸进尺",
+      "expected_behavior": "激活又团结又斗争，指出'以退让求团结则团结亡'，提醒需要增加'斗争'的比例",
+      "notes": "边界：过度退让的尾巴主义"
+    }
+  ]
+}

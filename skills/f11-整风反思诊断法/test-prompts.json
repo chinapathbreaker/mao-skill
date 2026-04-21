@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-introspection-criticism",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们团队经历了一次重大失败，想做一次复盘，应该从哪些角度切入？",
+      "expected_behavior": "激活整风反思诊断法，用三风诊断（主观主义/宗派主义/党八股）识别深层问题",
+      "notes": "典型场景：重大失败后的组织复盘"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "团队氛围最近不太好，开会都是形式，没有实质内容，问题在哪里？",
+      "expected_behavior": "激活整风反思诊断法，重点检查'党八股'（形式主义），问'开会有没有实质内容'",
+      "notes": "典型场景：团队形式主义问题"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我们团队方向对了但执行总是差一口气，不知道问题在哪",
+      "expected_behavior": "激活整风反思诊断法，用三风诊断逐项检查，找出得分最高的那个问题",
+      "notes": "典型场景：方向对但执行差"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个bug怎么修复",
+      "expected_behavior": "纯技术问题，不需要组织诊断",
+      "notes": "诱饵：技术问题"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我安排一下明天的日程",
+      "expected_behavior": "日常行政事务，不需要组织诊断",
+      "notes": "诱饵：日程管理"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我们是个小团队（3个人），整风反思适合用吗？",
+      "expected_behavior": "可以激活，但应简化为个人层面的自我诊断，而不是集体整风",
+      "notes": "边界：小团队的适用性"
+    }
+  ]
+}

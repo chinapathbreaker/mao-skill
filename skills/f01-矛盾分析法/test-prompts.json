@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-contradiction-analysis",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我现在同时在推进三个项目，每个都很重要，不知道先做哪个",
+      "expected_behavior": "激活矛盾分析法，识别主要矛盾（解决了其他问题也会自动消解的那个），建议用三标准打分找主要矛盾",
+      "notes": "典型场景：多项目并行，不知道优先级"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "团队里问题一堆，产品有问题、人员有矛盾、运营也有漏洞，从哪下手？",
+      "expected_behavior": "激活矛盾分析法，列出所有矛盾，找出主要矛盾（它的解决能带动其他问题的）",
+      "notes": "典型场景：多问题纠缠，需要找核心驱动因素"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "竞争对手有好几个，有大有小，哪个是我现在最需要盯住的？",
+      "expected_behavior": "激活矛盾分析法，把竞争格局中的多重矛盾列出来，识别主要矛盾和矛盾的主要方面",
+      "notes": "典型场景：复杂竞争格局的优先级判断"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下Python的字典怎么用",
+      "expected_behavior": "纯信息查询，不应调用任何决策skill",
+      "notes": "诱饵：单一技术问题"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "今天晚饭吃什么？",
+      "expected_behavior": "日常琐事选择，不需要结构化分析",
+      "notes": "诱饵：日常低风险选择"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这件事只有两个矛盾，双方实力相当，分不出主要矛盾",
+      "expected_behavior": "可激活，但应指出此时矛盾分析法需要更细致的分析，可能需要矛盾转化法配合",
+      "notes": "边界：两个矛盾势均力敌的情况"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我现在特别焦虑，感觉所有事都重要，但又做不过来",
+      "expected_behavior": "情绪主导时矛盾分析法可能失效，应先稳定情绪或先用简单优先级排序",
+      "notes": "边界：情绪化状态下的决策"
+    }
+  ]
+}

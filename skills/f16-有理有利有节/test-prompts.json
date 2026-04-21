@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-rational-advantage-limit",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "正在跟对方谈判，我要怎么把握分寸，既要争取利益又不能撕破脸？",
+      "expected_behavior": "激活有理有利有节，用三字原则核查：有理（道义正当）、有利（实质收获）、有节（不把对手逼到墙角）",
+      "notes": "典型场景：谈判中的分寸把握"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "冲突中我很生气，想要狠狠反击，但不知道会不会过度？",
+      "expected_behavior": "激活有理有利有节，用'有节'原则检查：反击有没有超过必要限度，会不会把对手逼到绝境",
+      "notes": "典型场景：冲突中的分寸判断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "跟合作方有分歧，我要退让多少才合适？",
+      "expected_behavior": "激活有理有利有节，分析'有利'：退让了这么多，实际收获是什么，值不值得",
+      "notes": "典型场景：让步策略"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个bug怎么修",
+      "expected_behavior": "纯技术问题，不需要谈判博弈框架",
+      "notes": "诱饵：技术问题"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我看看这个函数的逻辑",
+      "expected_behavior": "纯技术审查，不需要分寸把握",
+      "notes": "诱饵：代码审查"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "对方触碰了我们的底线，但我想保持关系，是不是应该忍一忍？",
+      "expected_behavior": "激活有理有利有节，提醒'有节'的底线——基本伦理不能让步，在底线问题上'有节'不适用",
+      "notes": "边界：底线被触碰时的'有节'"
+    }
+  ]
+}

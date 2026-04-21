@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-investigation-research",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想进入一个完全不了解的领域，应该怎么开始？",
+      "expected_behavior": "激活调查研究七步法，定问题→定范围→实地访问→多维数据→量化分析→提炼规律→形成方案",
+      "notes": "典型场景：新领域探索"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "要制定一个新的产品策略，但团队对用户需求理解不一致，有没有系统方法？",
+      "expected_behavior": "激活调查研究七步法，强调实地访问和量化分析步骤",
+      "notes": "典型场景：产品策略制定前的调研"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想验证一个商业假设，怎么快速获得真实数据？",
+      "expected_behavior": "激活调查研究七步法的简化版（前三步），强调实地访问和定量验证",
+      "notes": "典型场景：商业假设验证"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个Python库的文档在哪里",
+      "expected_behavior": "纯信息查询，不需要系统调研流程",
+      "notes": "诱饵：简单信息查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我格式化一下这段JSON",
+      "expected_behavior": "单一技术任务，不需要调研方法",
+      "notes": "诱饵：技术操作"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "时间很紧，只有两天可以做调研，怎么用七步法？",
+      "expected_behavior": "可以激活，但应使用简化版——只做第一步（定问题）和第三步（实地访问），决策后补全",
+      "notes": "边界：时间紧迫时的简化应用"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我对这个领域完全没有背景知识，连该问什么问题都不知道",
+      "expected_behavior": "激活，但应先做探索性调研（了解基本概念），再进入七步法的主流程",
+      "notes": "边界：零基础领域的调研"
+    }
+  ]
+}

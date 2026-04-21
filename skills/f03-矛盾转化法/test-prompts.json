@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-contradiction-transformation",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这个竞争对手现在很强，但会不会有一天变弱？什么时候？",
+      "expected_behavior": "激活矛盾转化法，分析对手'强'中隐含的自我瓦解因素，以及量变到质变的节点",
+      "notes": "典型场景：判断强者的弱点"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我现在处于困难期，不知道什么时候能好起来，要不要放弃？",
+      "expected_behavior": "激活矛盾转化法，分析量变积累和转折点，判断是否黎明前的黑暗",
+      "notes": "典型场景：困难期是否值得坚持"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个行业最近出现了一些变化信号，是噪音还是质变的开始？",
+      "expected_behavior": "激活矛盾转化法，分析哪些因素在增强/减弱，寻找量变到质变的临界点",
+      "notes": "典型场景：趋势变化的判断"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下今年GDP增速是多少",
+      "expected_behavior": "纯信息查询，不需要判断转化方向",
+      "notes": "诱饵：数据查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个API怎么调用",
+      "expected_behavior": "纯技术问题，不需要趋势判断",
+      "notes": "诱饵：单一技术问题"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "有个变化信号出现了，但我判断不出这是量变还是质变",
+      "expected_behavior": "可以激活，但应承认信息不足，建议持续观察而不强行判断",
+      "notes": "边界：信息不足时的趋势判断"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我觉得这个趋势肯定是对的，但不知道要等多久",
+      "expected_behavior": "激活矛盾转化法，但重点应放在'量变积累需要时间'的判断上",
+      "notes": "边界：趋势判断对但时间预期模糊"
+    }
+  ]
+}

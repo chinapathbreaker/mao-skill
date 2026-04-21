@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-enemy-friend-dynamics",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "行业里发生了一个大变化，原来的一些竞争对手关系要不要重新评估？",
+      "expected_behavior": "激活敌友判断动态框架，分析主要矛盾变化，识别敌友边界是否需要调整",
+      "notes": "典型场景：格局变化后的敌友重评"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个以前跟我们有过摩擦的合作方，现在能不能重新谈？",
+      "expected_behavior": "激活敌友判断动态框架，分析利益关系是否已变，识别团结的条件和底线",
+      "notes": "典型场景：历史恩怨后的合作可能性"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "盟友突然提了一个不合理的要求，我们是退让还是翻脸？",
+      "expected_behavior": "激活敌友判断动态框架，分析团结的目标还在不在，判断斗争的边界",
+      "notes": "典型场景：盟友提出不合理要求时的处理"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下这个国家的GDP数据",
+      "expected_behavior": "纯信息查询，不需要敌友动态分析",
+      "notes": "诱饵：数据查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个bug是什么导致的",
+      "expected_behavior": "纯技术问题，不需要敌友分析",
+      "notes": "诱饵：技术问题"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "主要矛盾变了，但我的资源还绑在旧的盟友身上，调整成本很高",
+      "expected_behavior": "激活敌友判断动态框架，但应分析调整成本与保持旧关系收益的对比",
+      "notes": "边界：敌友关系调整的成本考量"
+    }
+  ]
+}

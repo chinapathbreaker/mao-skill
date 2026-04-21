@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-strategy-tactics-dual-track",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "战略上我觉得要有耐心，但战术上我又觉得应该快点推进，怎么平衡？",
+      "expected_behavior": "激活战略持久战术速决双轨框架，明确区分'我现在是在战略层还是战术层思考'，分别按对应的原则处理",
+      "notes": "典型场景：战略耐心vs战术敏捷的困惑"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "有个具体项目失败了，但这是长期战略的一部分，我该怎么看待？",
+      "expected_behavior": "激活双轨框架，明确这是战术层面的失败（正常），不影响战略方向（持久），但要快速复盘",
+      "notes": "典型场景：战术失败后的战略判断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想快速推进一个事情，但有人说这是长期战不能急，该听谁的？",
+      "expected_behavior": "激活双轨框架，区分是战略层面的'持久'还是战术层面的'拖延'，分别判断",
+      "notes": "典型场景：战略与战术的混淆"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我看看这个代码哪里有bug",
+      "expected_behavior": "纯技术问题，不需要双轨框架",
+      "notes": "诱饵：技术调试"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个会议定在几点",
+      "expected_behavior": "日常行政事务，不需要战略/战术双轨分析",
+      "notes": "诱饵：日常安排"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "有人说'这是持久战，慢慢来'，但我感觉这是在为拖延找借口",
+      "expected_behavior": "激活双轨框架，帮助区分：这是战略层面的'持久'（正确）还是战术层面的'拖延'（错误）",
+      "notes": "边界：战略持久被用来为拖延辩护"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我打了好几个胜仗，感觉可以全面反攻了",
+      "expected_behavior": "激活双轨框架，提醒战术胜利不等于战略反攻，力量积累可能还不够，不要用战术的急躁破坏战略节奏",
+      "notes": "边界：战术胜利后的战略冒进"
+    }
+  ]
+}

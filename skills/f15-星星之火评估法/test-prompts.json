@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-spark-fire",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "有个创业公司的产品刚上线，用户还很少，有没有前途？",
+      "expected_behavior": "激活星星之火评估法，从内在生命力/方向正确性/积累速度/外部环境四个维度评估",
+      "notes": "典型场景：早期项目评估"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个技术路线现在还很早期，但有人说它是未来，应该押注吗？",
+      "expected_behavior": "激活星星之火评估法，判断是否'有戏'，警惕速胜论（现在弱≠永远弱）和亡国论（看起来强≠不可战胜）",
+      "notes": "典型场景：新兴技术路线评估"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "有个人才很想加入我们，但目前还没有什么成绩，要不要给机会？",
+      "expected_behavior": "激活星星之火评估法，评估这个人的内在生命力（自己能不能成长）和积累速度",
+      "notes": "典型场景：人才潜力评估"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下这个公司的财报",
+      "expected_behavior": "纯财务数据查询，不需要星星之火框架",
+      "notes": "诱饵：财务数据查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个函数怎么优化性能",
+      "expected_behavior": "纯技术问题，不需要新生力量评估",
+      "notes": "诱饵：技术优化"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这个项目现在看起来很弱，但有人说它'有潜力'，我该不该信？",
+      "expected_behavior": "激活星星之火评估法，用四维框架具体分析，而不是凭感觉判断",
+      "notes": "边界：'有潜力'但当前弱的项目"
+    }
+  ]
+}

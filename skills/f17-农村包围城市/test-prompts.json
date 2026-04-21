@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-surround-countryside",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "有个巨头占据了主要市场，我们作为后来者怎么打？",
+      "expected_behavior": "激活农村包围城市，不正面竞争，寻找巨头力量薄弱的'农村'（细分市场）先建立据点",
+      "notes": "典型场景：巨头竞争中的市场切入"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "正面战场打不过对手，有没有其他路可以走？",
+      "expected_behavior": "激活农村包围城市，分析对手力量最薄弱的地方，建立稳固的'农村'据点，波浪式扩展",
+      "notes": "典型场景：正面竞争失败后的策略"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想创业，但大市场都被占了，还有机会吗？",
+      "expected_behavior": "激活农村包围城市，寻找大公司力量薄弱的细分市场，先建立稳固的根据地",
+      "notes": "典型场景：创业市场选择"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我看看这个函数的性能",
+      "expected_behavior": "纯技术问题，不需要战略路径选择",
+      "notes": "诱饵：技术问题"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个数据库查询怎么写",
+      "expected_behavior": "纯技术实现，不需要竞争策略",
+      "notes": "诱饵：技术实现"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我已经在'农村'建立了据点，但进展很慢，要不要直接进攻'城市'？",
+      "expected_behavior": "激活农村包围城市，提醒波浪式扩展的原则——先巩固再扩展，不冒进",
+      "notes": "边界：过早进攻城市"
+    }
+  ]
+}

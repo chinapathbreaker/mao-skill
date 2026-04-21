@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-concentrated-force",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我同时在做三个方向，都感觉有点进展，但哪个都没有突破",
+      "expected_behavior": "激活集中兵力打歼灭战，提醒'分散兵力多条战线是禁忌'，建议选择最重要的1-2个集中突破",
+      "notes": "典型场景：精力分散，多线并进无突破"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "资源有限，不知道该把资源往哪里投，哪个方向优先级最高？",
+      "expected_behavior": "激活集中兵力打歼灭战，用主要矛盾识别确定最重要的目标，集中所有资源",
+      "notes": "典型场景：资源分配决策"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想在多个市场同时出击，这样是不是更安全？",
+      "expected_behavior": "激活集中兵力打歼灭战，提醒分散投入的风险，建议先在一个市场形成压倒性优势",
+      "notes": "典型场景：多市场同时进入"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下今天的股市行情",
+      "expected_behavior": "纯信息查询，不需要资源分配策略",
+      "notes": "诱饵：信息查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个变量名怎么起比较合适",
+      "expected_behavior": "纯技术编码问题，不需要战略资源分配",
+      "notes": "诱饵：技术细节"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我看好的方向还不确定，但觉得可以先投一部分试试",
+      "expected_behavior": "可以激活，但应提醒'探索阶段'和'集中阶段'是不同的，探索可以分散，验证后要集中",
+      "notes": "边界：探索阶段 vs 集中阶段"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "老板要求同时做三件事，我没办法只做一件",
+      "expected_behavior": "激活集中兵力打歼灭战，帮助分析三件事中哪件最重要，其他是否可以推迟，争取集中",
+      "notes": "边界：被迫多线作战"
+    }
+  ]
+}

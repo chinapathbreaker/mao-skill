@@ -1,0 +1,48 @@
+{
+  "skill": "maoxuan-fact-seeking",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我有一个判断，但感觉可能有偏差，怎么验证？",
+      "expected_behavior": "激活实事求是核查表，逐条核查'对现状有第一手了解吗''愿望是不是当成了现实'",
+      "notes": "典型场景：决策前的自我检查"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "有个成功案例想直接套用，但不知道适不适合我们",
+      "expected_behavior": "激活实事求是核查表，检查'这个案例的条件和当前情境一样吗'",
+      "notes": "典型场景：成功经验移植前的检查"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "开会的时候大家都同意了，但我总觉得哪里不对",
+      "expected_behavior": "激活实事求是核查表，检查'我的判断有没有被多数意见影响''有没有问过不同意见的人'",
+      "notes": "典型场景：从众压力下的自我核查"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下今天天气怎么样",
+      "expected_behavior": "纯信息查询，不需要决策前核查",
+      "notes": "诱饵：简单信息查询"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个代码怎么写",
+      "expected_behavior": "纯技术任务，不需要核查表",
+      "notes": "诱饵：技术实现"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "权威专家说应该这样做，我应该听吗？",
+      "expected_behavior": "激活实事求是核查表，检查'权威的意见有没有事实支撑''我自己的判断是什么'",
+      "notes": "边界：权威意见与个人判断的冲突"
+    }
+  ]
+}

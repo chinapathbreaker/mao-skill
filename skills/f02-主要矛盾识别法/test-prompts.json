@@ -1,0 +1,55 @@
+{
+  "skill": "maoxuan-primary-contradiction",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我每天都很忙，但感觉没做什么有影响力的事情，问题在哪里？",
+      "expected_behavior": "激活主要矛盾识别法，分析是否在解决次要矛盾",
+      "notes": "典型场景：忙碌但无进展"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我现在有五个目标想达成，精力有限，哪个最重要？",
+      "expected_behavior": "激活主要矛盾识别法，用三标准打分找主要矛盾",
+      "notes": "典型场景：多目标排序"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我处理了一个重要问题，但其他问题还是老样子，感觉没推动整体",
+      "expected_behavior": "激活主要矛盾识别法，判断是否把次要矛盾当成主要矛盾",
+      "notes": "典型场景：解决一个问题但整体无改善"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我的代码有个bug，帮我看看是什么问题",
+      "expected_behavior": "纯技术问题，不需要优先级判断",
+      "notes": "诱饵：单一技术问题"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个季度目标完成了，下个季度做什么？",
+      "expected_behavior": "日常规划，不涉及多重矛盾的优先级冲突",
+      "notes": "诱饵：常规计划工作"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这件事有好几个矛盾，我用三标准打分后，有两个得分一样高",
+      "expected_behavior": "可以激活，但应指出需要更细粒度分解矛盾，或者等待更多信息",
+      "notes": "边界：主要矛盾识别模糊的情况"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我觉得所有问题都重要，每个都紧急，没有哪个能排到后面",
+      "expected_behavior": "情绪/压力状态下的判断失真，应先质疑这个前提假设",
+      "notes": "边界：无法区分优先级的极端情况"
+    }
+  ]
+}
